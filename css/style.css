@@ -1,0 +1,915 @@
+@import url("https://fonts.googleapis.com/css?family=Homenaje|Mada:300,400");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Mada';
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Homenaje';
+  font-weight: 400;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+a {
+  color: #62c017;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(135deg, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url("../img/hero_banner_no_gradient2.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+header .ig_logo {
+  padding: 22px 14px 10px 16px;
+  margin: 0 45px;
+  width: 66px;
+  float: left;
+  position: relative;
+  z-index: 5;
+}
+
+@media (min-width: 1200px) {
+  header .ig_logo {
+    margin: 0 98px 0px 208px;
+  }
+}
+
+header .active {
+  border-top: 10px solid #62c017;
+}
+
+header #inner_nav_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 220px;
+  background-color: #333333;
+  z-index: 0;
+}
+
+@media (min-width: 900px) {
+  header #inner_nav_bg {
+    display: none;
+  }
+}
+
+header .hidden {
+  visibility: hidden;
+}
+
+header nav {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: light;
+}
+
+header nav i {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  color: white;
+  font-size: 2.2rem;
+}
+
+@media (min-width: 900px) {
+  header nav i {
+    visibility: hidden;
+  }
+}
+
+header nav ul {
+  padding: 22px 42px;
+}
+
+header nav ul li {
+  padding: 10px;
+  text-align: right;
+  list-style-type: none;
+}
+
+header nav ul li .hov_img {
+  display: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  header nav ul {
+    padding: initial;
+  }
+  header nav ul li {
+    visibility: visible;
+    position: relative;
+    margin-top: 20px;
+    padding: 22px 42px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    border-right: 1px solid #ffffff;
+  }
+  header nav ul li:last-child {
+    border-right: none;
+  }
+  header nav ul li:hover .hov_img {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+  header nav ul li:last-child:hover .hov_img {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -4px;
+  }
+}
+
+header h1 {
+  color: #2d2d2d;
+  font-size: 4.1rem;
+  margin-top: 20px;
+}
+
+@media (orientation: landscape) {
+  header h1 {
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  header h1 {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 900px) {
+  header h1 {
+    margin-top: 150px;
+  }
+}
+
+header h1 span {
+  color: white;
+}
+
+header h1 span::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background: rgba(34, 34, 34, 0.83);
+  z-index: 100;
+}
+
+.cookies .cookies_content {
+  width: 100%;
+  margin: 8px auto;
+}
+
+@media (min-width: 900px) {
+  .cookies .cookies_content {
+    width: 950px;
+    margin: 30px auto;
+  }
+}
+
+.cookies .cookies_content i {
+  padding: 6px 14px;
+  float: left;
+  font-size: 2rem;
+}
+
+@media (min-width: 900px) {
+  .cookies .cookies_content i {
+    font-size: 3rem;
+  }
+}
+
+.cookies .cookies_content p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .cookies .cookies_content p {
+    font-size: 0.85rem;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .cookies .cookies_content p {
+    float: left;
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-right: 42px;
+    width: 686px;
+  }
+}
+
+.cookies .cookies_content .cookies_button {
+  width: 82px;
+  margin: 5px auto;
+}
+
+@media (min-width: 900px) {
+  .cookies .cookies_content .cookies_button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+  }
+}
+
+.cookies .cookies_content button {
+  position: relative;
+  width: 82px;
+  height: 22px;
+  font-family: 'Mada';
+  font-weight: light;
+  padding-left: 14px;
+  color: white;
+  background: #62c017;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cookies .cookies_content button i {
+  position: absolute;
+  right: 0;
+  padding-top: 2px;
+  font-size: 1rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+main aside.counter {
+  visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+  main aside.counter {
+    visibility: visible;
+    font-family: 'Homenaje';
+    font-size: 1.4rem;
+    width: 30px;
+    height: 20px;
+    padding: 36px;
+    border-bottom: 1px solid #2d2d2d;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    z-index: 10;
+  }
+}
+
+main p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #2d2d2d;
+}
+
+@media (min-width: 900px) {
+  main p {
+    font-size: 1.6rem;
+  }
+}
+
+main #mission {
+  position: relative;
+}
+
+main #mission h2 {
+  margin: 84px auto 48px;
+  text-align: center;
+}
+
+main #mission p {
+  width: 80%;
+  margin: 0 auto 84px;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  main #mission p {
+    width: 754px;
+    margin: 0 auto 164px;
+  }
+}
+
+main #mission p::before {
+  content: ",,";
+  font-size: 3rem;
+  font-weight: 600;
+  position: absolute;
+  top: -36px;
+  left: -22px;
+}
+
+@media (min-width: 900px) {
+  main #mission p::before {
+    font-size: 4rem;
+    top: -50px;
+    left: -36px;
+  }
+}
+
+main #clients {
+  background: url("../img/trianglify.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+main #clients aside.counter {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+main #clients h2 {
+  padding: 84px 0 48px;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  main #clients h2 {
+    padding: 124px 0 48px;
+  }
+}
+
+@media (min-width: 900px) {
+  main #clients #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% auto;
+        grid-template-columns: 45% auto;
+        grid-template-areas: "clients_img clients_content";
+  }
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_img {
+    grid-area: clients_img;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: right;
+  }
+}
+
+main #clients section#clients_img .mockup {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_img .mockup {
+    width: 300px;
+    display: initial;
+    text-align: right;
+    margin-right: 62px;
+  }
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content {
+    grid-area: clients_content;
+    text-align: left;
+  }
+}
+
+main #clients section#clients_content p {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content p {
+    margin-top: 20px;
+    font-size: 2.1rem;
+    margin: 0 0;
+  }
+}
+
+main #clients section#clients_content p::before {
+  content: ",,";
+  font-size: 3rem;
+  font-weight: 600;
+  position: absolute;
+  top: -36px;
+  left: -22px;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content p::before {
+    font-size: 4rem;
+    top: -46px;
+    left: -34px;
+  }
+}
+
+main #clients section#clients_content .caption {
+  font-size: 1.3rem;
+  margin: 16px auto;
+}
+
+main #clients section#clients_content .caption span {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content .caption {
+    font-size: 1.6rem;
+    margin: 32px 0 36px;
+  }
+}
+
+main #clients section#clients_content .caption::before {
+  content: none;
+}
+
+main #clients section#clients_content button {
+  border: 1px solid white;
+  background: none;
+  color: white;
+  padding: 1px 8px;
+  margin-right: 4px;
+}
+
+main #clients section#clients_content .buttons {
+  margin: 36px auto;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content .buttons {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+}
+
+main #clients section#clients_content .dots {
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+@media (min-width: 900px) {
+  main #clients section#clients_content .dots {
+    text-align: left;
+    margin-left: 44px;
+    padding-bottom: 162px;
+  }
+}
+
+main #clients section#clients_content .dot {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+main #clients section#clients_content .dot:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+main #clients section#clients_content .active {
+  background-color: white;
+}
+
+main #products {
+  position: relative;
+}
+
+main #products h2 {
+  margin: 98px auto 42px auto;
+}
+
+main #products p {
+  text-align: center;
+}
+
+main #products p.icon_descr {
+  text-align: left;
+  display: none;
+}
+
+main #products p:nth-child(2) {
+  margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+  main #products p:nth-child(2) {
+    display: none;
+  }
+}
+
+main #products .icons {
+  text-align: center;
+  margin: 36px auto;
+  width: 300px;
+}
+
+@media (min-width: 900px) {
+  main #products .icons {
+    margin: 68px auto;
+    height: 700px;
+    width: 844px;
+  }
+}
+
+main #products .icons .hid {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main #products .icons .hid {
+    display: inline-block;
+  }
+}
+
+main #products .icons ul li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+
+@media (min-width: 900px) {
+  main #products .icons ul li {
+    position: relative;
+    margin-right: 0;
+    padding: 45px 25px;
+  }
+}
+
+main #products .icons ul li img {
+  width: 76px;
+}
+
+@media (min-width: 900px) {
+  main #products .icons ul li img {
+    width: 140px;
+  }
+}
+
+main #products .icons ul li h4 {
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  main #products .icons ul li:hover {
+    background-color: #62c017;
+  }
+  main #products .icons ul li:hover img {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+  main #products .icons ul li:hover .icon_descr {
+    display: block;
+    color: white;
+    background-color: #62c017;
+    left: 0px;
+    width: 160px;
+    font-size: 1rem;
+    padding: 30px 15px 25px;
+    position: absolute;
+    z-index: 5;
+  }
+  main #products .icons ul h4 {
+    display: none;
+  }
+}
+
+main #map {
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  main #map {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 22% 20% auto;
+        grid-template-columns: 22% 20% auto;
+        grid-template-areas: "icon adress map_img";
+  }
+}
+
+main #map section#icon {
+  text-align: center;
+  padding: 22px 0;
+}
+
+@media (min-width: 768px) {
+  main #map section#icon {
+    grid-area: icon;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: right;
+    padding: 162px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  main #map section#adress {
+    grid-area: adress;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+main #map section#adress p {
+  text-align: center;
+  line-height: 1.71rem;
+}
+
+@media (min-width: 768px) {
+  main #map section#adress p {
+    text-align: left;
+  }
+}
+
+main #map section#adress p:first-child {
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  main #map section#adress p:first-child {
+    padding-top: 166px;
+  }
+}
+
+main #map section#adress p:nth-child(2) {
+  margin: 30px 0;
+}
+
+main #map section#adress p:last-child {
+  padding-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  main #map section#adress p:last-child {
+    padding-bottom: 126px;
+    margin-right: 18px;
+  }
+}
+
+main #map section#map_img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main #map section#map_img {
+    position: relative;
+    display: initial;
+    grid-area: map_img;
+    text-align: right;
+    background: url("../img/map.png") no-repeat right -180px bottom -62px;
+  }
+  main #map section#map_img i {
+    position: absolute;
+    color: #62c017;
+    font-size: 2.85rem;
+    bottom: 280px;
+    right: 135px;
+  }
+}
+
+@media (min-width: 900px) {
+  main #map section#map_img {
+    background: url("../img/map.png") no-repeat right -130px bottom -62px;
+  }
+  main #map section#map_img i {
+    right: 185px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main #map section#map_img {
+    background: url("../img/map.png") no-repeat right 0px bottom -62px;
+  }
+  main #map section#map_img i {
+    right: 315px;
+  }
+}
+
+main #contact {
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+main #contact button {
+  position: relative;
+  width: 262px;
+  height: 40px;
+  font-family: 'Homenaje';
+  font-weight: light;
+  font-size: 1.6rem;
+  padding-left: 14px;
+  color: white;
+  background: #62c017;
+  border: none;
+  border-radius: 3px;
+  text-align: left;
+  cursor: pointer;
+}
+
+main #contact button i {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  font-size: 1.4rem;
+}
+
+main #contact #contact_button {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_button {
+    display: initial;
+    margin-top: 86px;
+  }
+}
+
+main #contact h2 {
+  padding-top: 80px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  main #contact h2 {
+    width: 70%;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: left;
+    padding-left: 210px;
+  }
+}
+
+main #contact p {
+  width: 80%;
+  margin: 60px auto 48px;
+}
+
+@media (min-width: 900px) {
+  main #contact p {
+    width: 760px;
+  }
+}
+
+main #contact #contact_form {
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto 48px;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_form {
+    width: 760px;
+  }
+}
+
+main #contact #contact_form fieldset {
+  font-weight: 300;
+  border: none;
+  font-size: 2.1rem;
+}
+
+main #contact #contact_form fieldset span {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_form fieldset span {
+    display: initial;
+  }
+}
+
+main #contact #contact_form fieldset .odd, main #contact #contact_form fieldset .even {
+  width: 100%;
+  height: 2.1rem;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #2d2d2d;
+  background-color: transparent;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_form fieldset .odd {
+    width: 232px;
+  }
+  main #contact #contact_form fieldset .even {
+    width: 210px;
+  }
+  main #contact #contact_form fieldset .even.second {
+    width: 158px;
+  }
+}
+
+main #contact #contact_form fieldset input:focus {
+  outline: 0;
+}
+
+main #contact #contact_form fieldset .perm {
+  font-size: 1.3rem;
+}
+
+main #contact #contact_form fieldset .perm input[type="checkbox"] {
+  margin-right: 16px;
+}
+
+main #contact #contact_form fieldset .submit_button {
+  width: 166px;
+  margin: 20px auto 30px;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_form fieldset .submit_button {
+    margin: 36px auto 56px;
+  }
+}
+
+main #contact #contact_form fieldset button {
+  width: 166px;
+}
+
+main #contact #contact_form div#message {
+  margin: 10px auto;
+  width: 80%;
+  height: 30px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  main #contact #contact_form div#message {
+    margin: 30px auto;
+  }
+}
+
+main #contact #contact_form div#message p {
+  width: initial;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  margin-top: -48px;
+  height: 90px;
+  background-color: #242424;
+  color: #8f8f8f;
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 26px;
+}
+
+@media (min-width: 900px) {
+  footer {
+    padding-left: 210px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */
